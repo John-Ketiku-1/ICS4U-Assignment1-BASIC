@@ -1,0 +1,98 @@
+<mxfile host="65bd71144e">
+    <diagram id="e8dCBDwISxUUT4ZHR-1C" name="Page-1">
+        <mxGraphModel dx="512" dy="740" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                
+                <!-- Start Program Block -->
+                <mxCell id="start" value="Start Program" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="240" y="50" width="120" height="60" as="geometry"/>
+                </mxCell>
+
+                <!-- Greet User -->
+                <mxCell id="greetUser" value="Greet User" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="240" y="150" width="120" height="60" as="geometry"/>
+                </mxCell>
+
+                <!-- Ask if enjoying stay -->
+                <mxCell id="enjoyStay" value="Ask if enjoying stay" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="240" y="250" width="120" height="60" as="geometry"/>
+                </mxCell>
+
+                <!-- Process Enjoyment Response -->
+                <mxCell id="processEnjoyment" value="Process Enjoyment Response" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="240" y="350" width="120" height="60" as="geometry"/>
+                </mxCell>
+
+                <!-- Ask for a problem -->
+                <mxCell id="askProblem" value="Ask for a problem" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="240" y="450" width="120" height="60" as="geometry"/>
+                </mxCell>
+
+                <!-- Process Problem -->
+                <mxCell id="processProblem" value="Process Problem" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="240" y="550" width="120" height="60" as="geometry"/>
+                </mxCell>
+
+                <!-- Ask for more problems -->
+                <mxCell id="askMoreProblems" value="Ask for more problems" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="240" y="650" width="120" height="60" as="geometry"/>
+                </mxCell>
+
+                <!-- Process more problems -->
+                <mxCell id="processMoreProblems" value="Process More Problems" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="240" y="750" width="120" height="60" as="geometry"/>
+                </mxCell>
+
+                <!-- Ask for payment -->
+                <mxCell id="askPayment" value="Ask for payment" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="240" y="850" width="120" height="60" as="geometry"/>
+                </mxCell>
+
+                <!-- Process Payment -->
+                <mxCell id="processPayment" value="Process Payment" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="240" y="950" width="120" height="60" as="geometry"/>
+                </mxCell>
+
+                <!-- End Program Block -->
+                <mxCell id="end" value="End Program" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="240" y="1050" width="120" height="60" as="geometry"/>
+                </mxCell>
+
+                <!-- Connections -->
+                <mxCell id="connectStartToGreet" style="edgeStyle=orthogonalEdgeStyle;html=1;" edge="1" parent="1" source="start" target="greetUser">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="connectGreetToEnjoy" style="edgeStyle=orthogonalEdgeStyle;html=1;" edge="1" parent="1" source="greetUser" target="enjoyStay">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="connectEnjoyToProcess" style="edgeStyle=orthogonalEdgeStyle;html=1;" edge="1" parent="1" source="enjoyStay" target="processEnjoyment">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="connectProcessToAskProblem" style="edgeStyle=orthogonalEdgeStyle;html=1;" edge="1" parent="1" source="processEnjoyment" target="askProblem">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="connectAskProblemToProcessProblem" style="edgeStyle=orthogonalEdgeStyle;html=1;" edge="1" parent="1" source="askProblem" target="processProblem">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="connectProcessProblemToAskMore" style="edgeStyle=orthogonalEdgeStyle;html=1;" edge="1" parent="1" source="processProblem" target="askMoreProblems">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="connectAskMoreToProcessMore" style="edgeStyle=orthogonalEdgeStyle;html=1;" edge="1" parent="1" source="askMoreProblems" target="processMoreProblems">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="connectProcessMoreToAskPayment" style="edgeStyle=orthogonalEdgeStyle;html=1;" edge="1" parent="1" source="processMoreProblems" target="askPayment">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="connectAskPaymentToProcessPayment" style="edgeStyle=orthogonalEdgeStyle;html=1;" edge="1" parent="1" source="askPayment" target="processPayment">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="connectProcessPaymentToEnd" style="edgeStyle=orthogonalEdgeStyle;html=1;" edge="1" parent="1" source="processPayment" target="end">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
